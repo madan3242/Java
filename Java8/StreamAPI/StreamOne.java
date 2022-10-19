@@ -2,8 +2,7 @@ import java.util.stream.Stream;
 
 public class StreamOne{
     public static void main(String[] args) {
-        Stream st = Stream.of(10, 20, 30, 40, 50);
-        
-        st.forEach(System.out::println);
+        Stream<Integer> stream = Stream.of(new Integer[] {1, 2, 3, 4, 5, 6});
+        stream.forEach((value) -> System.out.println(value));
     }
 }

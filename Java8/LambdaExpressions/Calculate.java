@@ -1,4 +1,4 @@
-import java.util.function.Function;
+// import java.util.function.Function;
 
 @FunctionalInterface
 interface Multiplication{
@@ -11,12 +11,9 @@ interface Addition{
 }
 
 public class Calculate {
-    
     public static void main(String[] args) {
         Multiplication m1 = (a, b) -> a * b;
         Addition m2 = (a, b) -> a + b;
-
-        
 
         System.out.println(m1.multiply(6, 7));
         System.out.println(m2.add(10, 20));
