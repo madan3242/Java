@@ -1,6 +1,6 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class StreamThree {
     public static void main(String[] args) {
@@ -14,7 +14,8 @@ public class StreamThree {
         languages.add("Ruby");
         languages.add("Swift");
 
-        Stream<String> newNames =  languages.stream().map(n -> n.toUpperCase()).collect(Collectors.toList());
+        // List<String> newNames =  languages.stream().map(n -> n.toUpperCase()).collect(Collectors.toList());
         // languages.stream().map(n -> n.toUpperCase()).filter(n -> n.startsWith("C")).forEach(System.out::println);
+        languages.stream().map(n -> n.toUpperCase()).forEach(System.out::println);
     }
 }
